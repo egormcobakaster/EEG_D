@@ -4,7 +4,6 @@ import numpy as np
 import torch
 from torch.utils.data import Dataset, DataLoader
 from scipy.signal import butter, filtfilt, find_peaks
-from sklearn.metrics.pairwise import cosine_similarity
 import torch.nn as nn
 from torchvision.models import resnet18
 

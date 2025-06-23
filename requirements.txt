@@ -1,0 +1,7 @@
+mne
+torch 
+numpy
+PyQt5
+pyqtgraph
+torchvision
+eeglabio

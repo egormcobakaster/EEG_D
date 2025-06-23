@@ -7,7 +7,7 @@ import mne
 import torch
 from torch.utils.data import Dataset, DataLoader
 from scipy.signal import butter, filtfilt, find_peaks
-from sklearn.metrics.pairwise import cosine_similarity
+# from sklearn.metrics.pairwise import cosine_similarity
 import torch.nn as nn
 from torchvision.models import resnet18
 from preproc import *
@@ -743,6 +743,7 @@ class EEGViewerTab(QtWidgets.QWidget):
 
 
     def analyze(self):
+        print("analyze")
         if self.data is None:
             return
 
