@@ -1,6 +1,8 @@
 # INSTALL AND RUN
 python3 -m venv venv
+
 pip install -r requirements.txt
+
 python3 eeg_app.py
 
 # Use
