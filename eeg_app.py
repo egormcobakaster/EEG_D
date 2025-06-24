@@ -251,7 +251,7 @@ class EEGViewerTab(QtWidgets.QWidget):
         self.window_plot_width = 10  # seconds
         self.similarity_threshold = 0.9
         self.device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
-        self.model = torch.load('../hard_metric/resnet18_19_0.9992762047381143_0.9926679123594849.pt', weights_only=False)
+        self.model = torch.load('weights/resnet18_19_0.9992762047381143_0.9926679123594849.pt', weights_only=False)
         self.model.eval()
 
         self.init_ui()
